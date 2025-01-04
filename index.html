@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Food & Groceries. Discover the best restaurants. Swiggy it!</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="home-container" id="home-page">
+        <div class="home-container-res">
+            <div class="navigation-bar">
+                <div class="navigation-bar-res">
+                    <div class="navigation-image"><img src="images/Swiggy_logo_bml6he.png" alt=""></div>
+                    <div class="navigation-option">
+                        <a href="#">Swiggy Corporate</a>
+                        <a href="#">Partner with us</a>
+                        <a href="#" class="get-the-app">Get the App <i class="fa-solid fa-arrow-up"></i></a>
+                        <a href="#" class="sign-in" onclick="signin()">Sign in</a>
+                    </div>
+                    <div class="navigation-mob-ham" onclick="mobnav()">☰</div>
+
+                </div>
+            </div>
+
+            <div class="home-heading">
+                <h1>Order Food & Groceries. Discover the best restaurants. Swiggy it!</h1>
+            </div>
+
+            <div class="home-form-bar">
+
+                <form action="#" class="home-form-bar-res">
+                    <div class="home-loaction"><i class="fa-solid fa-location-dot" id="locationicon"></i><input
+                            type="text" placeholder="New Delhi..."><i class="fa-solid fa-angle-down" id="arrowdown"
+                            onclick="arrowdown()"></i>
+                    </div>
+                    <div class="home-location-arrow-down" id="home-location-arrow-down">
+                        <div class="use-current"><i class="fa-solid fa-location-arrow"></i><span>Use My Current
+                                location</span></div>
+                        <hr>
+                        <p>RECENT SEARCH</p>
+                        <div class="bydefault-location"><i class="fa-solid fa-location-arrow"></i><span>110043, Gali
+                                Number 7, Nangli Vihar Extension, Baprola, Delhi, India</span></div>
+                    </div>
+                    <div class="home-search"><input type="text" placeholder="Search for restaurant, item or more"><i
+                            class="fa-solid fa-magnifying-glass"></i></div>
+                </form>
+
+            </div>
+
+            <div class="home-all-option">
+                <div class="home-all-option-res">
+                    <a href="#"><img src="images/home-1.avif" alt="Error"></a>
+                    <a href="#"><img src="images/home-2.avif" alt="Error"></a>
+                    <a href="#"><img src="images/home-3.avif" alt="Error"></a>
+                    <a href="#"><img src="images/home-4.avif" alt="Error"></a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="navigation-mob-option" id="navigation-mob-option">
+            <div class="mobilelogo"><img src="images/Swiggy_logo_bml6he.png" alt=""> <i class="fa-solid fa-xmark"
+                    onclick="hamclose()"></i></div>
+            <div class="mobile-option">
+                <a href="#" onclick="signin()"><i class="fa-solid fa-user"></i><span>Sign in</span></a>
+                <a href="#" onclick="hamclose()">Swiggy Corporate</a>
+                <a href="#" onclick="hamclose()">Partner with us</a>
+                <a href="#" onclick="hamclose()">Offers</a>
+                <a href="#" onclick="hamclose()">Help</a>
+                <a href="#" onclick="hamclose()">Other</a>
+                <div class="mobileicon">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-pinterest"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="home-left-image"><img src="images/Veggies_new.png" alt=""></div>
+        <div class="home-right-image"><img src="images/Sushi_replace.png" alt=""></div>
+    </div>
+
+
+    <div class="menu-section">
+        <div class="menu-section-res">
+            <div class="menu-section-top">
+                <h4>Order our best food options</h4>
+                <div class="menu-navigation">
+                    <button class="arrow-left" id="scrollLeft"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="arrow-right" id="scrollRight"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="menu-crousal-box" id="menu-crousal-box">
+                <div class="menu-crousal"><img src="images/Pizza.avif" alt="Error"></div>
+                <div class="menu-crousal"><img src="images/Chole Bhature.avif" alt="Error"></div>
+                <div class="menu-crousal"><img src="images/North Indian.avif" alt="Error"></div>
+                <div class="menu-crousal"><img src="images/Chinese.avif" alt="Error"></div>
+                <div class="menu-crousal"><img src="images/Biryani.avif" alt="Error"></div>
+                <div class="menu-crousal"><img src="images/Dosa.avif" alt="Error"></div>
+                <div class="menu-crousal"><img src="images/Burger.avif" alt="Error"></div>
+                <div class="menu-crousal"><img src="images/Rolls.avif" alt="Error"></div>
+                <div class="menu-crousal"><img src="images/Cake.avif" alt="Error"></div>
+                <div class="menu-crousal"><img src="images/Pasta.avif" alt="Error"></div>
+                <div class="menu-crousal"><img src="images/Rasmalai.avif" alt="Error"></div>
+                <div class="menu-crousal"><img src="images/Pav Bhaji.avif" alt="Error"></div>
+                <div class="menu-crousal"><img src="images/Idli.avif" alt="Error"></div>
+                <div class="menu-crousal"><img src="images/Pure Veg.avif" alt="Error"></div>
+                <div class="menu-crousal"><img src="images/Shake.avif" alt="Error"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grocery-section">
+        <div class="grocery-section-res">
+            <div class="grocery-section-top">
+                <h4>Shop groceries on Instamart</h4>
+                <div class="grocery-navigation">
+                    <button class="arrow-left" id="slideLeft"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="arrow-right" id="slideRight"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="grocery-crousal-box" id="grocery-crousal-box">
+                <div class="grocery-crousal"><img src="images/frresh vegitable.avif" alt="Error"> <span>Fresh
+                        Vegetables</span></div>
+                <div class="grocery-crousal"><img src="images/frresh fruit.avif" alt="Error"> <span>Fresh Fruits</span>
+                </div>
+                <div class="grocery-crousal"><img src="images/bread.avif" alt="Error"> <span>Dairy, Bread and
+                        Eggs</span></div>
+                <div class="grocery-crousal"><img src="images/rice.avif" alt="Error"> <span>Atta, Rice and Dals</span>
+                </div>
+                <div class="grocery-crousal"><img src="images/dry fruit.avif" alt="Error"> <span>Masalas and Dry
+                        Fruits</span></div>
+                <div class="grocery-crousal"><img src="images/refine.avif" alt="Error"> <span>Oils and Ghee</span></div>
+                <div class="grocery-crousal"><img src="images/chips.avif" alt="Error"> <span>Munchies</span></div>
+                <div class="grocery-crousal"><img src="images/dairy milk.avif" alt="Error"> <span>Sweet Tooth</span>
+                </div>
+                <div class="grocery-crousal"><img src="images/drink.avif" alt="Error"> <span>Cold Drinks and
+                        Juices</span></div>
+                <div class="grocery-crousal"><img src="images/biscuit.avif" alt="Error"> <span>Biscuits and Cakes</span>
+                </div>
+                <div class="grocery-crousal"><img src="images/noodles.avif" alt="Error"> <span>Instant and Frozen
+                        Food</span></div>
+                <div class="grocery-crousal"><img src="images/hygine.avif" alt="Error"> <span>Hygiene and
+                        Wellness</span></div>
+                <div class="grocery-crousal"><img src="images/meat.avif" alt="Error"> <span>Meat and Seafood</span>
+                </div>
+                <div class="grocery-crousal"><img src="images/cleaning.avif" alt="Error"> <span>Cleaning
+                        Essentials</span></div>
+                <div class="grocery-crousal"><img src="images/soap.avif" alt="Error"> <span>Bath, Body and Hair</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="restaurant-section">
+        <div class="restaurant-section-res">
+            <div class="restaurant-section-top">
+                <h4>Discover best restaurants on Dineout</h4>
+                <div class="restaurant-navigation">
+                    <button class="arrow-left" id="slideLeft2"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="arrow-right" id="slideRight2"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="restaurant-crousal-box" id="restaurant-crousal-box">
+                <div class="restaurant-crousal">
+                    <div class="restaurant-image"><img src="images/res 01.jpeg" alt="Error"> </div>
+                    <div class="restaurant-image-text">
+                        <div class="restaurant-image-texthead">
+                            Lord of the Food
+                        </div>
+                        <div class="restaurant-image-subtext"><i class="fa-solid fa-star"></i> 4.2</div>
+                    </div>
+                    <div class="restaurant-layer">
+                        <div class="layer-line-1">
+                            <p>North Indian</p> <span>₹1300 for two</span>
+                        </div>
+                        <div class="layer-line-2">
+                            <p>Pacific Mall, Tagore Garden, Delhi</p> <span>10.2 km</span>
+                        </div>
+                        <div class="layer-line-3">
+                            <div class="layer-line-3-sub"><img src="images/book.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Table Booking
+                            </div>
+                            <div class="layer-line-3-sub"><img src="images/free_desert.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Free Desert
+                            </div>
+                        </div>
+                        <div class="layer-line-4 sumit"><img src="images/OFFER.png" alt="Error"
+                                style="width: 20px; height: auto;">
+                            Flat 10% off on pre-booking
+                        </div>
+                        <div class="layer-line-5"> Up to 15% off with bank offers</div>
+                    </div>
+                </div>
+
+                <div class="restaurant-crousal">
+                    <div class="restaurant-image"><img src="images/res 02.jpeg" alt="Error"> </div>
+                    <div class="restaurant-image-text">
+                        <div class="restaurant-image-texthead">You Mee</div>
+                        <div class="restaurant-image-subtext"><i class="fa-solid fa-star"></i> 4.4</div>
+                    </div>
+                    <div class="restaurant-layer">
+                        <div class="layer-line-1">
+                            <p>Asian</p> <span>₹900 for two</span>
+                        </div>
+                        <div class="layer-line-2">
+                            <p>Vegas Mall, Dwarka, Delhi</p> <span>4.2 km</span>
+                        </div>
+                        <div class="layer-line-3">
+                            <div class="layer-line-3-sub"><img src="images/book.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Table Booking
+                            </div>
+                            <div class="layer-line-3-sub"><img src="images/free_desert.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Free Desert
+                            </div>
+                        </div>
+                        <div class="layer-line-4 sumit"><img src="images/OFFER.png" alt="Error"
+                                style="width: 20px; height: auto;">
+                            Flat 25% off on pre-booking
+                        </div>
+                        <div class="layer-line-5"> Up to 15% off with bank offers</div>
+                    </div>
+                </div>
+
+                <div class="restaurant-crousal">
+                    <div class="restaurant-image"><img src="images/res 03.jpg" alt="Error"> </div>
+                    <div class="restaurant-image-text">
+                        <div class="restaurant-image-texthead">Laidback Cafe</div>
+                        <div class="restaurant-image-subtext"><i class="fa-solid fa-star"></i> 4.1</div>
+                    </div>
+                    <div class="restaurant-layer">
+                        <div class="layer-line-1">
+                            <p>North Indian</p> <span>₹1900 for two</span>
+                        </div>
+                        <div class="layer-line-2">
+                            <p>Vegas Mall, Dwarka, Delhi</p> <span>4.1 km</span>
+                        </div>
+                        <div class="layer-line-3">
+                            <div class="layer-line-3-sub"><img src="images/book.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Table Booking
+                            </div>
+                            <div class="layer-line-3-sub"><img src="images/free_desert.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Free Desert
+                            </div>
+                        </div>
+                        <div class="layer-line-4 sumit"><img src="images/OFFER.png" alt="Error"
+                                style="width: 20px; height: auto;">
+                            Flat 25% off on pre-booking
+                        </div>
+                        <div class="layer-line-5"> Up to 15% off with bank offers</div>
+                    </div>
+                </div>
+
+                <div class="restaurant-crousal">
+                    <div class="restaurant-image"><img src="images/res 04.jpg" alt="Error"> </div>
+                    <div class="restaurant-image-text">
+                        <div class="restaurant-image-texthead">Tim Hortons</div>
+                        <div class="restaurant-image-subtext"><i class="fa-solid fa-star"></i> 4.4</div>
+                    </div>
+                    <div class="restaurant-layer">
+                        <div class="layer-line-1">
+                            <p>Beverages</p> <span>₹800 for two</span>
+                        </div>
+                        <div class="layer-line-2">
+                            <p>Vegas Mall, Dwarka, Delhi</p> <span>4.2 km</span>
+                        </div>
+                        <div class="layer-line-3">
+                            <div class="layer-line-3-sub"><img src="images/book.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Table Booking
+                            </div>
+                            <div class="layer-line-3-sub"><img src="images/free_desert.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Free Desert
+                            </div>
+                        </div>
+                        <div class="layer-line-4 sumit"><img src="images/OFFER.png" alt="Error"
+                                style="width: 20px; height: auto;">
+                            Flat 10% off on pre-booking
+                        </div>
+                        <div class="layer-line-5"> Up to 15% off with bank offers</div>
+                    </div>
+                </div>
+
+                <div class="restaurant-crousal">
+                    <div class="restaurant-image"><img src="images/res 05.jpg" alt="Error"> </div>
+                    <div class="restaurant-image-text">
+                        <div class="restaurant-image-texthead">Cafe Bow</div>
+                        <div class="restaurant-image-subtext"><i class="fa-solid fa-star"></i> 4.8</div>
+                    </div>
+                    <div class="restaurant-layer">
+                        <div class="layer-line-1">
+                            <p>Continental</p> <span>₹1000 for two</span>
+                        </div>
+                        <div class="layer-line-2">
+                            <p>City Center Mall, Dwarka, Delhi</p> <span>5.7 km</span>
+                        </div>
+                        <div class="layer-line-3">
+                            <div class="layer-line-3-sub"><img src="images/book.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Table Booking
+                            </div>
+                            <div class="layer-line-3-sub"><img src="images/free_desert.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Free Desert
+                            </div>
+                        </div>
+                        <div class="layer-line-4 sumit"><img src="images/OFFER.png" alt="Error"
+                                style="width: 20px; height: auto;">
+                            Flat 40% off on pre-booking
+                        </div>
+                        <div class="layer-line-5"> Up to 15% off with bank offers</div>
+                    </div>
+                </div>
+
+                <div class="restaurant-crousal">
+                    <div class="restaurant-image"><img src="images/res 06.jpg" alt="Error"> </div>
+                    <div class="restaurant-image-text">
+                        <div class="restaurant-image-texthead">Dwarka Pubexchange</div>
+                        <div class="restaurant-image-subtext"><i class="fa-solid fa-star"></i> 4.2</div>
+                    </div>
+                    <div class="restaurant-layer">
+                        <div class="layer-line-1">
+                            <p>Continental</p> <span>₹1200 for two</span>
+                        </div>
+                        <div class="layer-line-2">
+                            <p>Radisson Blu Hotel, Dwarka, Delhi</p> <span>5 km</span>
+                        </div>
+                        <div class="layer-line-3">
+                            <div class="layer-line-3-sub"><img src="images/book.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Table Booking
+                            </div>
+                            <div class="layer-line-3-sub"><img src="images/free_desert.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Free Desert
+                            </div>
+                        </div>
+                        <div class="layer-line-4 sumit"><img src="images/OFFER.png" alt="Error"
+                                style="width: 20px; height: auto;">
+                            Flat 30% off on pre-booking
+                        </div>
+                        <div class="layer-line-5"> Up to 15% off with bank offers</div>
+                    </div>
+                </div>
+
+                <div class="restaurant-crousal">
+                    <div class="restaurant-image"><img src="images/res 07.jpeg" alt="Error"> </div>
+                    <div class="restaurant-image-text">
+                        <div class="restaurant-image-texthead">Dwarka Social</div>
+                        <div class="restaurant-image-subtext"><i class="fa-solid fa-star"></i> 4.1</div>
+                    </div>
+                    <div class="restaurant-layer">
+                        <div class="layer-line-1">
+                            <p>Chinese</p> <span>₹1000 for two</span>
+                        </div>
+                        <div class="layer-line-2">
+                            <p>Vegas Mall, Dwarka, Delhi</p> <span>4.1 km</span>
+                        </div>
+                        <div class="layer-line-3">
+                            <div class="layer-line-3-sub"><img src="images/book.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Table Booking
+                            </div>
+                            <div class="layer-line-3-sub"><img src="images/free_desert.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Free Desert
+                            </div>
+                        </div>
+                        <div class="layer-line-4 sumit"><img src="images/OFFER.png" alt="Error"
+                                style="width: 20px; height: auto;">
+                            Flat 20% off on pre-booking
+                        </div>
+                        <div class="layer-line-5"> Up to 15% off with bank offers</div>
+                    </div>
+                </div>
+
+                <div class="restaurant-crousal">
+                    <div class="restaurant-image"><img src="images/res 08.jpeg" alt="Error"> </div>
+                    <div class="restaurant-image-text">
+                        <div class="restaurant-image-texthead">Haunt By Dutyfree</div>
+                        <div class="restaurant-image-subtext"><i class="fa-solid fa-star"></i> 3.9</div>
+                    </div>
+                    <div class="restaurant-layer">
+                        <div class="layer-line-1">
+                            <p>Finger Food</p> <span>₹1800 for two</span>
+                        </div>
+                        <div class="layer-line-2">
+                            <p>Vegas Mall, Dwarka, Delhi</p> <span>4.1 km</span>
+                        </div>
+                        <div class="layer-line-3">
+                            <div class="layer-line-3-sub"><img src="images/book.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Table Booking
+                            </div>
+                            <div class="layer-line-3-sub"><img src="images/free_desert.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Free Desert
+                            </div>
+                        </div>
+                        <div class="layer-line-4 sumit"><img src="images/OFFER.png" alt="Error"
+                                style="width: 20px; height: auto;">
+                            Flat 30% off on pre-booking
+                        </div>
+                        <div class="layer-line-5"> Up to 15% off with bank offers</div>
+                    </div>
+                </div>
+
+                <div class="restaurant-crousal">
+                    <div class="restaurant-image"><img src="images/res 09.jpg" alt="Error"> </div>
+                    <div class="restaurant-image-text">
+                        <div class="restaurant-image-texthead">Punjab Grill</div>
+                        <div class="restaurant-image-subtext"><i class="fa-solid fa-star"></i> 4.0</div>
+                    </div>
+                    <div class="restaurant-layer">
+                        <div class="layer-line-1">
+                            <p>North Indian</p> <span>₹900 for two</span>
+                        </div>
+                        <div class="layer-line-2">
+                            <p>Vegas Mall, Dwarka, Delhi</p> <span>4.1 km</span>
+                        </div>
+                        <div class="layer-line-3">
+                            <div class="layer-line-3-sub"><img src="images/book.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Table Booking
+                            </div>
+                            <div class="layer-line-3-sub"><img src="images/free_desert.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Free Desert
+                            </div>
+                        </div>
+                        <div class="layer-line-4 sumit"><img src="images/OFFER.png" alt="Error"
+                                style="width: 20px; height: auto;">
+                            Flat 10% off on pre-booking
+                        </div>
+                        <div class="layer-line-5"> Up to 15% off with bank offers</div>
+                    </div>
+                </div>
+
+                <div class="restaurant-crousal">
+                    <div class="restaurant-image"><img src="images/res 10.jpg" alt="Error"> </div>
+                    <div class="restaurant-image-text">
+                        <div class="restaurant-image-texthead">Mayfair</div>
+                        <div class="restaurant-image-subtext"><i class="fa-solid fa-star"></i> 4.4</div>
+                    </div>
+                    <div class="restaurant-layer">
+                        <div class="layer-line-1">
+                            <p>Italian</p> <span>₹1500 for two</span>
+                        </div>
+                        <div class="layer-line-2">
+                            <p>Reliance Mall, Dwarka, Delhi</p> <span>4.7 km</span>
+                        </div>
+                        <div class="layer-line-3">
+                            <div class="layer-line-3-sub"><img src="images/book.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Table Booking
+                            </div>
+                            <div class="layer-line-3-sub"><img src="images/free_desert.png" alt="Error"
+                                    style="width: 15px; height: auto;">
+                                Free Desert
+                            </div>
+                        </div>
+                        <div class="layer-line-4 sumit"><img src="images/OFFER.png" alt="Error"
+                                style="width: 20px; height: auto;">
+                            Flat 10% off on pre-booking
+                        </div>
+                        <div class="layer-line-5"> Up to 15% off with bank offers</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="download-section"><img src="images/App_download_banner.png" alt=""></div>
+    <div class="download-section-mobile"><img src="images/Download mobile banner.png" alt=""></div>
+
+    <div class="food-delivery">
+        <div class="food-delivery-res">
+            <h4>Cities with food delivery</h4>
+            <div class="food-delivery-box">
+                <div class="food-box-layer">Order food online in Delhi</div>
+                <div class="food-box-layer">Order food online in Gurgaon</div>
+                <div class="food-box-layer">Order food online in Banglore</div>
+                <div class="food-box-layer">Order food online in Hyderabad</div>
+                <div class="food-box-layer">Order food online in Mumbai</div>
+                <div class="food-box-layer">Order food online in Pune</div>
+                <div class="food-box-layer">Order food online in Kolkata</div>
+                <div class="food-box-layer">Order food online in Chennai</div>
+                <div class="food-box-layer">Order food online in Ahmedabad</div>
+                <div class="food-box-layer">Order food online in Chandigarh</div>
+                <div class="food-box-layer">Order food online in Jaipur</div>
+                <div class="food-box-layer">Order food online in Kochi</div>
+                <div class="food-box-layer">Order food online in Lucknow</div>
+                <div class="food-box-layer">Order food online in Nagpur</div>
+                <div class="food-box-layer">Order food online in Indore</div>
+                <div class="food-box-layer showmore">Show More <i class="fa-solid fa-angle-down" id="arrowdown"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="food-delivery">
+        <div class="food-delivery-res">
+            <h4>Cities with grocery delivery</h4>
+            <div class="food-delivery-box">
+                <div class="food-box-layer">Order grocery online in Gurgaon</div>
+                <div class="food-box-layer">Order grocery online in Delhi</div>
+                <div class="food-box-layer">Order grocery online in Banglore</div>
+                <div class="food-box-layer">Order grocery online in Hyderabad</div>
+                <div class="food-box-layer">Order grocery online in Mumbai</div>
+                <div class="food-box-layer">Order grocery online in Pune</div>
+                <div class="food-box-layer">Order grocery online in Kolkata</div>
+                <div class="food-box-layer">Order grocery online in Chennai</div>
+                <div class="food-box-layer">Order grocery online in Ahmedabad</div>
+                <div class="food-box-layer">Order grocery online in Chandigarh</div>
+                <div class="food-box-layer">Order grocery online in Jaipur</div>
+                <div class="food-box-layer">Order grocery online in Kochi</div>
+                <div class="food-box-layer">Order grocery online in Lucknow</div>
+                <div class="food-box-layer">Order grocery online in Nagpur</div>
+                <div class="food-box-layer">Order grocery online in Indore</div>
+                <div class="food-box-layer showmore">Show More <i class="fa-solid fa-angle-down" id="arrowdown"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <div class="footer-section-res">
+            <div class="footer-top-section">
+                <div class="footer-top-section-first"><img src="images/footer-logo.svg" alt="">
+                    <p>© 2024 Swiggy Limited</p>
+                </div>
+                <div class="footer-top-section-second">
+                    <div class="footer-top-section-second-mini1">
+                        <h4>Company</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">Swiggy Corporate</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Team</a>
+                        <a href="#">Swiggy One</a>
+                        <a href="#">Swiggy Instamart</a>
+                        <a href="#">Swiggy Dineout</a>
+                        <a href="#">Swiggy Genie</a>
+                        <a href="#">Minis</a>
+                    </div>
+                    <div class="footer-top-section-second-mini2">
+                        <div class="mini2-under">
+                            <h4>Contact us</h4>
+                            <a href="#">Help & Support</a>
+                            <a href="#">Partner with us</a>
+                            <a href="#">Ride with us</a>
+                        </div>
+                        <div class="mini2-under">
+                            <h4>Legal</h4>
+                            <a href="#">Terms & Conditions</a>
+                            <a href="#">Cookie Policy</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="footer-top-section-third">
+                    <div class="footer-top-section-third-mini1">
+                        <h4>Available in:</h4>
+                        <a href="#">Delhi</a>
+                        <a href="#">Banglore</a>
+                        <a href="#">Gurgaon</a>
+                        <a href="#">Hyderabad</a>
+                        <a href="#">Mumbai</a>
+                        <a href="#">Pune</a>
+                        <a href="#" class="footer-cities">685 cities <i class="fa-solid fa-angle-down"
+                                id="arrowdown"></i></a>
+                    </div>
+                    <div class="footer-top-section-third-mini2">
+                        <div class="mini22-under">
+                            <h4>Life at Swiggy</h4>
+                            <a href="#">Explore with Swiggy</a>
+                            <a href="#">Swiggy News</a>
+                            <a href="#">Snackables</a>
+                        </div>
+                        <div class="mini22-under">
+                            <h4>Social Links</h4>
+                            <div class="social-link-icon">
+                                <a href="https://www.facebook.com/" style="text-decoration: none; color: black;"
+                                    target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                                <a href="https://www.instagram.com/" style="text-decoration: none; color: black;"
+                                    target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                                <a href="https://www.youtube.com/" style="text-decoration: none; color: black;"
+                                    target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="https://in.linkedin.com/" style="text-decoration: none; color: black;"
+                                    target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://in.pinterest.com/" style="text-decoration: none; color: black;"
+                                    target="_blank"><i class="fa-brands fa-square-pinterest"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-end-section">
+                <p>For better experience, download the Swiggy app now</p>
+                <div class="footer-end-section-image">
+                    <div class="footer-end-section-image1"><img src="images/appstore.png" alt="Error"></div>
+                    <div class="footer-end-section-image1"><img src="images/GooglePlay.png" alt="Error"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="signin-container" id="signin-container">
+        <div class="signin-container-res">
+            <div class="signin-close" onclick="signinclose()">✕</div>
+            <div class="signin-box">
+                <div class="signin-box-left">
+                    <h2>Login</h2>
+                    <div class="signin-box-left-mini">or<button>create an account</button></div>
+                    <hr>
+                </div>
+                <div class="signin-box-right"><img src="images/login img.png" alt="Error"></div>
+            </div>
+            <div class="sign-form">
+                <form action="#">
+                    <div class="sign-form-input">
+                        <label>Phone Number</label>
+                        <input type="text" name="" id="" maxlength="10" minlength="10">
+                    </div>
+                    <button type="submit" class="signin-button">LOGIN</button>
+                   <p>By clicking on Login, I accept the Terms & Conditions & Privacy Policy</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
