@@ -926,7 +926,7 @@ body {
         justify-content: center;
         align-items: center;
         margin-top: 5%;
-        z-index: 1;
+        z-index: 2;
         
     }
 
@@ -981,7 +981,6 @@ body {
         box-shadow: 1px 1px 5px grey;
         display: none;
         overflow: hidden;
-        z-index: 2;
     }
     .downtoggle {
         width: 100%;
@@ -995,7 +994,6 @@ body {
         padding: 2.5% 2% 4% 2%;
         box-sizing: border-box;
         overflow: hidden;
-        z-index: 2;
     }
 
     .use-current {
